@@ -1,1 +1,9 @@
-# ponderada-m10-sem08
+# Conclusões
+
+O presente repositório visa processar imagens do conjunto de dados presente [neste link](https://drive.google.com/drive/folders/1xxm6ZjfsDSmv6C9JvbgiGrmHktrUjV5x), desenvolvendo um fluxo consistente para normalizar, redimensionar e inserir os keypoints e esqueletos de cada imagem. A exemplo, foi demonstrado como realizar esse processamento com imagens especificamente da classe "cow", que representa os bovinos.
+
+Pessoalmente, o processo de aprendizado se deu de forma mais acentuada na compreensão do formato JSON dos dados de anotação, em que foi preciso entender como as informações de cada imagem estava refletida no arquivo em questão, para ser possível conectar com as imagens do dataset. Além disso, a implementação da conexão das imagens com os dados de keypoint e esqueleto foi uma novidade para mim, sendo um processo novo com dificuldades inerentes a novidade.
+
+Cabe ressaltar que a qualidade das imagens oriundas do redimensionamento foi uma limitação para possíveis implementações futuras, uma vez que não consegui padronizar o tamanho das imagens sem perder a qualidade. Nessa perspectiva, a qualidade das anotações dependem do processo que já foi contruído pelos fornecedores dos dados, então eventuais perdas de qualidade em imagens podem ocorrer. Também cabe ressaltar que, para muitas imagens, o poder computacional pode ser um problema, já que não consegui carregar muitas imagens com a T4 sem RAM extra disponível no Colab.
+
+Para trabalhos futuros, entendo que o fluxo natural seja implementar um modelo que consiga predizer a pose estimation de um animal presente nas 5 classes do dataset sem que haja anotações prévias da imagem. Com os dados processados neste repositório é possível criar um conjunto de treino e teste, fundamentais para o futuro modelo de classificação.
